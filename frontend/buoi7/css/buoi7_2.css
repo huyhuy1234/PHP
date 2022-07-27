@@ -1,0 +1,32 @@
+/*font-family*/
+/*Default FF, Chrome, IE: Times New Roman*/
+#id1 {
+	font-family: Arial, Helvetica, sans-serif;
+}
+
+/*font-size*/
+#id2 {
+	font-size: 20px;
+}
+
+/*font-weight*/
+/*normal, bold, light, bolder hoặc
+con số tứ 100 - 900: trong đó 400 bằng normal 600 bằng bold*/
+/*FF & Chrome 100 - 400 là như nhau, 600 - 900 là như nhau. Nghĩa là nó chỉ support normal và bold*/
+/*Vì vậy font-weight chỉ xài cho trường hợp bạn muốn đậm*/
+#id3 {
+	font-weight: bold;
+}
+
+/*font-style*/
+#id4 {
+	font-style: italic;
+}
+
+/* kết hợp các thuộc tính của font*/
+#id5 {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 20px;
+	font-weight: bold;
+	font-style: italic;
+}

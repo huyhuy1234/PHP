@@ -1,0 +1,112 @@
+#id1 {
+	text-align: right;
+	border: 1px solid black;
+	width: 500px;
+}
+
+#id2 {
+	text-align: center;
+	border: 1px solid black;
+}
+
+#id3 {
+	text-align: justify;
+	border: 1px solid black;
+}
+
+#id4 {
+	text-decoration: none;
+}
+
+#id5 {
+	text-decoration: underline;
+}
+
+#id6 {
+	text-decoration: line-through;
+}
+
+#id7 {
+	text-decoration: overline;
+}
+
+#id8 {
+	text-transform: uppercase;
+}
+
+#id9 {
+	text-transform: lowercase;
+}
+
+#id10 {
+	text-transform: capitalize;
+} 
+
+#id11 {
+	text-indent: 50px;
+}
+
+#id12 {
+	letter-spacing: 5px;
+}
+
+#id13 {
+	line-height: 10px;
+	border: 1px solid red;
+}
+
+#id14 {
+	word-spacing: 10px;
+}
+
+#id15 {
+	vertical-align: text-top;
+}
+
+#id16 {
+	vertical-align: text-bottom;
+}
+
+#id17 {
+	vertical-align: middle;
+}
+
+#id18 {
+	vertical-align: sub;
+}
+
+#id19 {
+	vertical-align: super;
+}
+
+
+/*chỉ định khoảng trắng trong 
+văn bản được đối xử như thế nào. Có một số giá trị: normal (mặc định), nowrap, pre, pre-line, pre-wrap*/
+/*normal: nhiều khoảng trắng kề nhau sẽ thành 1 khoảng trắng. Bọc lại khi cần thiết*/
+#id20 {
+	/*mặc định*/
+	white-space: normal;
+	width: 200px;
+	height: 150px; 
+	border: 1px solid black;
+	/*text-align: justify;*/
+}
+
+/*white-space:nowrap*/
+/*nowrap: nhiều khoảng trắng kề nhau sẽ thành 1 khoảng trắng. Không bọc lại.*/
+#id21 {
+	white-space: nowrap;
+	width: 200px;
+	height: 150px;
+	border: 1px solid black;
+}
+
+/*white-space:pre*/
+/*pre: nhiều khoảng trắng kề nhau sẽ được giữ nguyên. 
+Không bọc lại. Xuống dòng được giữa nguyên. Thuộc tính này giống y như thẻ <pre>*/
+#id22 {
+	white-space: pre;
+	width: 200px;
+	height: 150px;
+	border: 1px solid black;
+}

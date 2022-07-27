@@ -1,0 +1,12 @@
+:root {
+	--main-color: yellow;
+}
+
+#id1 {
+	/*var: variable - biến*/
+	background-color: var(--main-color);
+}
+
+#id2 {
+	background-color: var(--main-color);
+}

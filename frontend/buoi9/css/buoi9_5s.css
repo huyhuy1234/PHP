@@ -1,0 +1,58 @@
+/*screen < 576*/
+
+.column1 {
+	background-color: red;
+}
+
+
+.column2 {
+	background-color: green;
+}
+
+
+.column3 {
+	background-color: yellow;
+	display: none;
+}
+
+
+.column4 {
+	background-color: blue;
+	display: none;
+}
+/*768px > screen >= 576px*/
+@media (min-width: 576px){
+	.column3, .column4 {
+		display: block;
+	}
+}
+
+/*992px > screen >= 768px*/
+@media (min-width: 768px){
+	.row {
+		display: flex;
+		flex-wrap: wrap;
+	}
+
+	.row > * {
+		width: 50%;
+	}
+}
+
+/*1200px > screen >= 992px*/
+@media (min-width: 992px){
+	.column1, .column2 {
+		width: calc(100% / 3);
+	}
+
+	.column3, .column4 {
+		width: calc(100% / 6);
+	}
+}
+
+/*screen >=1200px*/
+@media (min-width: 576px){
+	.row > * {
+		width: 25%;
+	}
+}

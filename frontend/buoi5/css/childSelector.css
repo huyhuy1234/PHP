@@ -1,0 +1,11 @@
+/*Mục tiêu chọn thẻ span nằm trong thẻ div*/
+/*khoảng trắng đọc là nằm trong*/
+/*chọn thẻ span nằm trong thẻ div*/
+
+/*Mục tiêu chọn con trực tiếp
+dấu > là chọn con trực tiếp
+đọc là chọn thẻ span là con trực tiếp của thể p*/
+p > span{
+	background-color: red; 
+	color: white;
+}

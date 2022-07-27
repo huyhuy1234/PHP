@@ -1,0 +1,45 @@
+#id1{
+	text-decoration: none;
+}
+/*hover: liên kết được hover (rê chuột vào liên kết)*/
+#id1:hover {
+	color: red;
+}
+
+/*first-child: con đầu tiên phải là p
+*/
+#id2 p:first-child {
+	background-color: blue;
+
+}
+
+/*first-of-type: xóa đi những thẻ thỏa mãn 2 tiêu chí không phải là thẻ p và cũng không có con
+Được kết quả, áp dụng first-child, nhớ là nếu thẻ mà chứa p thì không đếm
+*/
+/*first-of-type = giữ lại p, đánh lại số thứ tự chỉ cho p, sử dụng first-child*/
+#id3 p:first-of-type {
+	background-color: yellow;
+
+}
+
+#id4 p:first-of-type {
+  background-color: yellow;
+
+}
+
+/*first-child = nth-child(1)*/
+#id5 p:nth-child(3) {
+	background-color: orange;
+
+}
+
+#id6 p:nth-of-type(3) {
+	background-color: pink;
+
+}
+/*an + b*/
+/*Trong đó a, b là 2 con số cụ thể*/
+/*n chạy từ 0*/
+#id7 p:nth-child(-n + 3) {
+  background-color: red;
+}

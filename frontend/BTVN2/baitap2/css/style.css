@@ -1,0 +1,79 @@
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+
+body  {
+	margin: 16px;
+}
+
+ul {
+	list-style: none;
+	/*mat cham den*/
+}
+
+ul >li > a {
+	text-decoration: none;
+	color: black;
+
+}
+
+ul > li > a.active {
+	color: blue;
+}
+
+ul > li {
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+
+img {
+	max-width: 300px;
+	width: 100%;
+}
+
+.row-inner {
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+
+
+input:not([type=radio]) {
+	height: 25px;
+	max-width: 350px;
+	width: 100%;
+}
+
+
+button {
+	padding: 15px 20px;
+	cursor: pointer;
+	border-radius: 8px; 
+}
+
+@media (min-width: 576px){
+	.row, .row-inner {
+		display: flex;
+		flex-wrap: wrap;
+	}
+
+	.col-left {
+		width: 40%;
+	}
+
+	.col-right{
+		width: 60%;
+		padding-left: 10px;
+	}
+
+
+	.col-left-inner {
+		width: 20%;
+		min-width: 100px;
+	}
+
+	.col-right-inner {
+		width: 80%;
+	}
+}

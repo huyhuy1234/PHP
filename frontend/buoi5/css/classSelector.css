@@ -1,0 +1,20 @@
+/*Đứng trước dấu ngoặc nhọn gọi là selector- phần tử được chọn*/
+/*Đọc là: chọn thẻ div*/
+
+/*đặc điểm của idS là dấu # để gọi id*/
+/*đặc điểm cùa class là dấu .*/
+
+.vk {
+	background-color: red; 
+	color: white;
+}
+
+.love {
+	background-color: purple;
+	color: black;
+}
+
+.ck{
+	background-color: green;
+	color: yellow;
+}

@@ -1,0 +1,10 @@
+style = format = định dạng
+Có 3 loại style:
+1. Style inline ( viết thẳng vô thẻ)
+2. Style internal (định dạng nằm ở trên thẻ head của html)
+3. Style external ( file riêng bên ngoài)
+
+Phân loại selector:
+1. Type selector
+2. Id selector
+3. Class selector

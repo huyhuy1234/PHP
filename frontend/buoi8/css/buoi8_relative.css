@@ -1,0 +1,12 @@
+#id1, #id2, #id3 {
+	border:1px solid black;
+	width:400px;
+	height:100px; 
+}
+
+#id2 {
+	position:relative;
+	left:50px;
+	background-color: pink;
+	opacity: 0.8;
+}

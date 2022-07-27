@@ -1,0 +1,17 @@
+html, body {
+	height: 100%;
+}
+
+label {
+	width:80px;
+}
+
+form {
+	width:100%;
+	max-width: 500px;
+}
+
+button[type=button] {
+	border: none;
+	outline:none;
+}

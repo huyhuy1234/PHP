@@ -1,0 +1,38 @@
+/*Box-sizing: Thuộc tính xác định có hay không việc tính padding, border 
+vào trong width/height của thẻ (phần tử). Có 2 giá trị: content-box, border-box*/
+/*content-box: width/height chỉ tính đến phần nội dung của thẻ (mặc định)*/
+/*border-box: width/height tính luôn cả phần padding, border*/
+
+#id1 {
+	box-sizing: content-box;
+	width:200px;
+	padding:20px;
+	border:5px solid black;
+	background-color: blue;
+}
+
+/*border-box: width/height tính đến phần border của thẻ*/
+#id2 {
+	box-sizing: border-box;
+	width:200px;
+	padding:20px;
+	border:5px solid black;
+	background-color: red;
+}
+
+/*Max-width: Thuộc tính xác định chiều rộng tối đa của thẻ, 
+đương nhiên nó có thể nhỏ hơn giá trị chỉ định tùy thuộc vào kích thước màn hình*/
+#id3 {
+	max-width: 800px;
+	width: 100%;
+	border:2px solid red;
+}
+
+/*Marign: auto. Thuộc tính này của margin giúp canh giữa phần tử, phần tử dạng block*/
+#id4 {
+	max-width:800px;
+	margin:auto;
+	/*margin-left: calc((100% - 500px) / 2);*/
+	border:2px solid green;
+}
+

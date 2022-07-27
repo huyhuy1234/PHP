@@ -1,0 +1,141 @@
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 50%;
+  background-image: url("p.png");
+  background-repeat: no-repeat;
+  background-position: center;
+
+  
+
+} 
+
+.container {
+  height: 200px;
+  /* margin-top: 50px; */
+  /* background-image: url("p.png"); */
+  
+  /* margin: auto; */
+  transform: translate(-5%, -180%);
+}
+.b1 {
+  display: inline-block;
+  width: 15px;
+  height: 15px;
+  background: pink;
+  border-radius: 50%;
+  position: relative;
+  animation-name: mymove;
+  animation-delay: 1s;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+
+
+}
+
+.b2 {
+  display: inline-block;
+  width: 15px;
+  height: 15px;
+  background: red;
+  border-radius: 50%;
+  position: relative;
+  animation-name: mymove;
+  animation-delay: 1.1s;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+
+}
+
+.b3 {
+  display: inline-block;
+  width: 15px;
+  height: 15px;
+  background: orange;
+  border-radius: 50%;
+  position: relative;
+  animation-name: mymove;
+  animation-delay: 1.2s;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+
+}
+
+.b4 {
+  display: inline-block;
+  width: 15px;
+  height: 15px;
+  background: yellow;
+  border-radius: 50%;
+  position: relative;
+  animation-name: mymove;
+  animation-delay: 1.3s;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+
+}
+
+.b5 {
+  display: inline-block;
+  width: 15px;
+  height: 15px;
+  background: green;
+  border-radius: 50%;
+  position: relative;
+  animation-name: mymove;
+  animation-delay: 1.4s;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+
+}
+
+.b6 {
+  display: inline-block;
+  width: 15px;
+  height: 15px;
+  background: blue;
+  border-radius: 50%;
+  position: relative;
+  animation-name: mymove;
+  animation-delay: 1.5s;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+
+}
+
+.b7 {
+  display: inline-block;
+  width: 15px;
+  height: 15px;
+  background: black;
+  border-radius: 50%;
+  position: relative;
+  animation-name: mymove;
+  animation-delay: 1.6s;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+
+}
+
+.b8 {
+  display: inline-block;
+  width: 15px;
+  height: 15px;
+  background: pink;
+  border-radius: 50%;
+  position: relative;
+  animation-name: mymove;
+  animation-delay: 1.7s;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+
+}
+
+@keyframes mymove {
+  0% {bottom: 0px;}
+  25% {bottom: 30px;}
+  50%{bottom: 0px;}
+  75%{bottom: 30px;}
+  100%{bottom:0px;}
+}

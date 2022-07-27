@@ -1,0 +1,7 @@
+/*Mục tiêu chọn thẻ span nằm trong thẻ div*/
+/*khoảng trắng đọc là nằm trong*/
+/*chọn thẻ span nằm trong thẻ div*/
+div span{
+	background-color: red; 
+	color: white;
+}

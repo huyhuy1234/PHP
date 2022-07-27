@@ -1,0 +1,22 @@
+#id1, #id2, #id3 {
+	border:1px solid black;
+	width:400px;
+	height:100px;
+	
+}
+
+#id2 {
+	position:sticky;
+	/*top:50px;*/
+	top:0;
+	background-color:green;
+	opacity: 0.8;
+	/*margin:auto;*/
+}
+
+#id4 {
+	height:2000px;
+}
+
+
+

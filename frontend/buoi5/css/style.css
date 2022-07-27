@@ -1,0 +1,6 @@
+/*Đứng trước dấu ngoặc nhọn gọi là selector- phần tử được chọn*/
+/*Đọc là: chọn thẻ div*/
+div {
+	background-color: red; 
+	color: white;
+}

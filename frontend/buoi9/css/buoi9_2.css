@@ -1,0 +1,23 @@
+.row {
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.column1, .column2 {
+	width:50%;
+}
+
+.column1 {
+	background-color: red;
+}
+
+.column2 {
+	background-color: blue;
+}
+
+@media (max-width: 768px) {
+	.column1, .column2 {
+		width:100%;
+	}
+}
+

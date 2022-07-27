@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Personal Information</title>
+	<link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+	<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+	<form action="processForm.php" method="POST" enctype="multipart/form-data">
+		<h1>Personal Information</h1>
+		<div class="row">
+			<div class="col-left">
+				<img src="cho-con.jpg" alt="Con chó nhỏ">
+				<nav>
+					<ul>
+						<li><a class="active" href="#">Personal Information</a></li>
+						<li><a href="#">Certificates</a></li>
+						<li><a href="#">Interest</a></li>
+						<li><a href="#">Change Password</a></li>
+					</ul>
+
+				</nav>
+			</div>
+			<div class="col-right">
+				
+				<hr>
+				<div class="row-inner">
+					<div class="col-left-inner">
+						<label for="firstname">Firstname</label>
+					</div>
+					<div class="col-right-inner">
+						<input type="text" name="firstname" id="firstname" required autofocus>
+					</div>
+				</div>
+				
+				<div class="row-inner">
+					<div class="col-left-inner">
+						<label for="lastname">Lastname</label>
+					</div>
+					<div class="col-right-inner">
+						<input type="text" name="lastname" id="lastname" required>
+					</div>
+				</div>
+
+				<div class="row-inner">
+					<div class="col-left-inner">
+						<label for="email">Email address</label>
+					</div>
+					<div class="col-right-inner">
+						<input type="email" name="email" id="email" required>
+					</div>
+				</div>
+
+				<div class="row-inner">
+					<div class="col-left-inner">
+						<label for="avatar">Upload file</label>
+					</div>
+					<div class="col-right-inner">
+						<input type="file" name="avatar" id="avatar" accept="image/*" required>
+					</div>
+				</div>
+				<div class="row-inner">
+					<div class="col-left-inner">
+						<label for="location">Location</label>
+					</div>
+					<div class="col-right-inner">
+						<input type="text" name="location" id="location" required>
+					</div>
+				</div>
+				<div class="row-inner">
+					<div class="col-left-inner">
+						<label for="country">Country</label>
+					</div>
+					<div class="col-right-inner">
+						<select name="country" id="country" required>
+							<option value="vn">Việt Nam</option>
+							<option value="lao">Lào</option>
+							<option value="cpc">Campuchi</option>
+						</select>
+					</div>
+				</div>
+				
+				
+				<div class="row-inner">
+					<div class="col-left-inner">
+						<label for="level">English level</label>
+					</div>
+					<div class="col-right-inner">
+						<input type="range" name="level" id="level" min="0" max="990">
+					</div>
+				</div>
+				
+				<div class="row-inner">
+					<div class="col-left-inner">
+						<label for="male">Gender: </label>
+					</div>
+					<div class="col-right-inner">
+						<label>
+							<input type="radio" name="gender" value="male" id="male" required> Male
+						</label>
+						<br>
+						<label>
+							<input type="radio" name="gender" value="female"> Female
+						</label>
+						<br>
+						<label>
+							<input type="radio" name="gender" value="undefined"> Undefined
+						</label>
+					</div>
+				</div>
+
+				
+			</div>
+		</div>
+		<button type="submit">Save</button>
+	</form>
+</body>
+</html>

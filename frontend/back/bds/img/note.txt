@@ -1,0 +1,5 @@
+blue - van phong
+red - nong thon
+green - san choi
+yellow - chung cu
+pink - khu cong nghiep

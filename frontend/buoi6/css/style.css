@@ -1,0 +1,65 @@
+.class1 {
+	/*background-color: red;*/
+	background-color: rgba(17,45,150,0.5);
+	/* nhìn xuyên qua được */
+	/* có thể làm rgb(,,) và nhập ba số vô*
+	#-- -- -- ba ký tự từ 00-FF*/
+}
+
+.class2 {
+	width: 200px;
+	height: 100px;
+	padding: 5px;
+	border: 2px solid red;
+	margin: 100px;
+
+}
+
+.class3 {
+	width: 800px;
+	height: 200px;
+	background-color: red;
+
+}
+.class4 {
+	/*so với cha trực tiếp 
+	70% * 800px = ...*/
+	width: 70%;
+	background-color: green;
+}
+
+.class5 {
+	width: 800px;
+	height: 200px;
+	background-color: blue;
+
+}
+
+.class6 {
+	/* 1em = 1 font-size của chính phần tử đó*/
+	/*30em = 30 * font-size = 30 * 18px = 540px*/
+	/*em là element(phần tử)*/
+	width: 30em;
+	font-size: 19px;
+	background-color: yellow;
+
+}
+
+.class7 {
+	width: 800px;
+	height: 200px;
+	background-color: green;
+
+}
+
+.class8 {
+	/*rem là root element([hần tử) - thằng thẻ gốc html*/
+	/*font-size của thẻ gốc html mặc định là 16px*/
+	/*1rem = 1 font-size của thể gốc html*/
+	/*30rem = 30 * font-size thẻ gốc = 30 * 16px = 480px*/
+	width: 30rem;
+	/*font-style: 18px;*/
+	background-color: yellow;
+
+}
+

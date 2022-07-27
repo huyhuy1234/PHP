@@ -1,0 +1,84 @@
+/*Reset CSS*/
+/*screen < 576px*/
+*{
+	padding: 0;
+	margin: 0;
+	box-sizing:  border-box;
+}
+
+body{
+	margin: 16px;
+	/*background-color: grey;*/
+}
+
+
+form{
+	max-width: 800px;
+	margin: auto;
+	/*border: 1px solid black;*/
+}
+
+hr	{
+	max-width: 600px;
+	margin: auto;
+	border: none;
+	border-top: 1px solid #dededede;
+}
+
+h1{
+	font-weight: normal;
+	font-size: 27px;
+}
+
+input:not([type=number], [type=radio], [type=checkbox]) {
+	width: 100%;
+	max-width: 300px;
+	height: 25px;
+}
+
+[type=number], select {
+	height: 25px;
+	width: 50px;
+}
+
+/*chi mot phan tu trong the*/
+input::placeholder {
+	font-style: italic;
+}
+
+button{
+	background-color: red;
+	color: white;
+	border: none;
+	padding: 10px 10px;
+
+}
+
+/*dem ra ngoai de khi thu nho man hinh van co margin*/
+.row{
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+
+/*chia cot*/
+/*screen >=576px*/
+@media (min-width: 576px){
+	.row{
+		display: flex;
+		flex-wrap: wrap;
+		/*dan ra cac dong*/
+		
+	}
+
+	.col-left {
+		width: 30%;
+		text-align: right;
+		/*di chuyen noi dung trong the qua phai*/
+		padding-right: 5px;	
+		/*cach noi dung chu ra xa mot chut*/
+	}
+
+	.col-right {
+		width: 70%;
+	}
+}

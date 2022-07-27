@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Register Form</title>
+	<script src="https://www.google.com/recaptcha/api.js" async defer></script>
+	<link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+</head>
+<body>
+	<form action="processForm.php" method="POST">
+		<h1>Đăng ký</h1>
+
+		<label for="username">Tên: </label>
+		<input type="text" id="username" name="uname" autofocus required>
+		<p>Đây là tên sẽ được hiển thị cùng với thông tin của bạn. Bạn có thể sử dụng bất cứ tên nào bạn muốn. </p>
+		<p>Sau khi tạo bạn sẽ không thể thay đổi tên này</p>
+
+		<label for="email">Địa chỉ email: </label>
+		<input type="email" id="email" name="email" required>
+		<p> Lưu ý điền email cẩn thận. Nếu điền sai, email bạn không thể đăng ký thành viên(khuyến khích nên dùng Gmail</p>
+
+		<hr>
+		<label for="password">Mật khẩu: </label>
+		<input type="password" id="password" name="password" required>
+		<br>
+		<br>
+		<label for="password_confirmation">Xác nhận mật khẩu: </label>
+		<input type="password" id="password_confirmation" name="password_confirmation" required>
+
+		<hr>
+		<label for="male">Giới tính: </label>
+		<br>
+		<label>
+			<input type="radio" name="gender" value="male" id="male" required> Nam
+		</label>
+		<br>
+		<label>
+			<input type="radio" name="gender" value="female"> Nữ
+		</label>
+		<br>
+		<label>
+			<input type="radio" name="gender" value="undefined"> (Không xác định)
+		</label>
+		<br>
+		<br>
+		<label for="month">Ngày sinh: </label>
+		<select name="month" id="month" required>
+			<option value=""></option>
+			<option value="1">Tháng 1</option>
+			<option value="2">Tháng 2</option>
+			<option value="3">Tháng 3</option>
+			<option value="4">Tháng 4</option>
+			<option value="5">Tháng 5</option>
+			<option value="6">Tháng 6</option>
+			<option value="7">Tháng 7</option>
+			<option value="8">Tháng 8</option>
+			<option value="9">Tháng 9</option>
+			<option value="10">Tháng 10</option>
+			<option value="11">Tháng 11</option>
+			<option value="12">Tháng 12</option>
+		</select>
+		<input type="number" name="day" min="1" max="31" required placeholder="Ngày">
+		<input type="number" name="year" min="1900" max="2022" required placeholder="Năm">
+		<hr>
+		<span>Xác nhận</span>
+		
+		<div class="g-recaptcha" data-sitekey="6Le2NuEaAAAAAP2tiTOdUIJKgj48KTAwuNs9-eSU"></div>
+		<hr>
+		<p>
+			<input type="checkbox" checked name="term_condition" value="yes">
+			Tôi đã đọc<b>Nội quy diễn đàn</b>.Tôi hứa sẽ chấp hành nghiêm chỉnh
+		</p>
+		
+		<br>
+		<br>
+		<button type="submit">Đăng ký</button>
+	</form>
+</body>
+</html>

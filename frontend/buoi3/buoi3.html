@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Buoi3</title>
+</head>
+<body>
+	<div>
+		<form action="processForm.php" method="POST">
+		Username: <input type="text" name="username" required autofocus placeholder="Nhập username">
+		<br>
+		<br>
+		Password: <input type="password" name="password" required placeholder="Nhập mật khẩu">
+		<br>
+		<br>
+		<!-- mặc định là style submit -->
+		<button>Login</button>
+
+		<h2>Select/option</h2>
+		Country:
+		<br>
+		<select name="country" id="" required>
+			<option value="">Vui lòng chọn quốc gia</option>
+			<option value="vn">Việt Nam</option>
+			<option value="lao">Lào</option>
+			<option value="cam">Campuchia</option>
+			<option value="thailan">Thái Lan</option>
+			<option value="Cuba">Cu Ba</option>
+		</select>
+		<select name="country" id="" required>
+			<option value="">Vui lòng chọn quốc gia</option>
+			<option value="vn">Việt Nam</option>
+			<option value="lao">Lào</option>
+			<option value="cam">Campuchia</option>
+			<option value="thailan">Thái Lan</option>
+			<option value="Cuba">Cu Ba</option>
+		</select>
+
+		<h2>Textarea</h2>
+		Feedback: <textarea name="massage" id="" cols="30" rows="10"></textarea>
+		</form>
+	</div>
+
+	<h2>Danh sách công việc:</h2>
+	<!-- ol là order list: danh sách có thứ tự -->
+	<!-- li: list item, phần tự có trong danh sách -->
+	<ol type="a">
+		<li>Task1</li>
+		<li>Task2</li>
+		<li>Task3</li>
+	</ol>
+
+	<h2>Danh sách sản phẩm đang bán:</h2>
+	<!-- ul là unorder list: danh sách không có thứ tự -->
+	<ul>
+		<li>Điện Thoại</li>
+		<li>Laptop</li>
+		<li>Phụ kiện</li>
+	</ul>
+
+	<h2>Thẻ Span</h2>
+	<span style="color: green">Huy</span>
+
+	<h2>Thẻ label</h2>
+	<!-- cách 1 -->
+	<label for="xxx">Username:</label>
+	<input type="text" id="xxx">
+	<br>
+	<br>
+	<!-- cách 2 -->
+	<label>
+		Username: <input type="text">
+	</label>
+	<br>
+	<br>
+	<h2>Thẻ iframe</h2>
+	<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3919.7105179205228!2d106.62606199999999!3d10.756779!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31752c290a2422bb%3A0xdd15a85b8d07fb1!2zMjYwLzI4QSBCw6AgSG9tLCBQaMaw4budbmcgMTMsIFF14bqtbiA2LCBUaMOgbmggcGjhu5EgSOG7kyBDaMOtIE1pbmg!5e0!3m2!1svi!2s!4v1649932557018!5m2!1svi!2s" width="800" height="600" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+	<iframe width="560" height="315" src="https://www.youtube.com/embed/CWGeM2PlsBg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+	<h2>Video</h2>
+	<video src="video.mp4" controls width="100%" autoplay muted></video>
+
+	<h2>Audio</h2>
+	<audio src="audio.mp3" controls></audio>
+	
+
+</body>
+</html>

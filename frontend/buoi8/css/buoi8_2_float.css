@@ -1,0 +1,28 @@
+.row::after {
+	display: block;
+	content: '';
+	clear:both;
+}
+
+.row {
+	background-color: pink;
+}
+
+.col {
+	width: calc(100% / 3);
+	border: 1px solid black;
+	float:left;
+	box-sizing: border-box;
+}
+
+.color-red {
+	background-color: red;
+}
+
+.color-green {	
+	background-color: green;
+}
+
+.color-yellow {
+	background-color: yellow;
+}

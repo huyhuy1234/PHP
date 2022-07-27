@@ -1,0 +1,8 @@
+@font-face {
+	font-family: convit;
+	src:url('fonts/Lato/Lato-BoldItalic.ttf');
+}
+
+#id1 {
+	font-family: convit;
+}

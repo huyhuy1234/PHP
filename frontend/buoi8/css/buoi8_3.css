@@ -1,0 +1,80 @@
+#id1  {
+	border:1px solid blue;
+	text-align: center;
+}
+/*	margin: auto (thực chất là dùng margin-left:auto và margin-right:auto) 
+Canh giữa cho những phần tử block. 
+Lưu ý nó sẽ không hoạt động nếu width không được chỉ định hoặc chỉ định 100%*/
+#id2 {
+	width: 200px;
+	height: 150px;
+	border: 1px solid black;
+	margin:auto;
+	/*Chỉ cần margin-left:auto & margin-right:auto là đủ*/
+}
+
+/*Sử dụng padding: dùng cho trường hợp height co giản theo nội dung*/
+#id3 {
+	padding-top:50px;
+	padding-bottom: 50px;
+	border: 1px solid orange;
+}
+
+/*Sử dụng line-height: chỉ định line-height bằng với height của thẻ, dùng cho trường hợp 1 dòng text. 
+Cần phải biết kích thước height trước*/
+#id4 {
+	width: 200px;
+	line-height: 60px;
+	border: 1px solid blue;
+}
+
+#id5 {
+	position: relative;
+	border: 1px solid black;
+	height:500px;
+}
+
+#id5 > div {
+	top:50%;
+	position: absolute;
+	border:1px solid red;
+	transform: translate(0, -50%);
+	/*margin:auto;*/
+}
+
+/*Sử dụng position và transform để center cho cả chiều ngang và dọc*/
+
+#id6 {
+	width: 200px;
+	height: 150px;
+	position: relative;
+	border: 1px solid green;
+}
+/*Lưu ý margin:auto không work cho trường hợp dùng position:absolute*/
+/*margin:auto work well cho trường hợp postion:relative*/
+#id6 > div {
+	position: absolute;
+	top:50%;
+	left:50%;
+	transform: translate(-50%, -50%);
+	/*transform: translateY(-50%);
+	transform: translateX(-50%);*/
+	border:1px solid black;
+}
+
+
+#id7 {
+	width: 200px;
+	height: 150px;
+	border: 1px solid green;
+	display: flex;
+	/*Canh giữa theo chiều dọc*/
+	align-items: center;
+
+	/*Canh giữa theo chiều ngang*/
+	justify-content: center;
+}
+
+#id7 > div {
+	border:1px solid red;
+}

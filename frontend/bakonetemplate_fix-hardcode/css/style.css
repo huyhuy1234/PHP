@@ -1,0 +1,438 @@
+/*Reset css*/
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+/*Define fonts*/
+@font-face {
+	font-family: Lato-Regular;
+	src: url('../fonts/Lato/Lato-Regular.ttf');
+
+}
+
+@font-face {
+	font-family: Lato-Light;
+	src: url('../fonts/Lato/Lato-Light.ttf');
+
+}
+
+@font-face {
+	font-family: Lato-Bold;
+	src: url('../fonts/Lato/Lato-Bold.ttf');
+
+}
+
+@font-face {
+	font-family: Lato-LightItalic;
+	src: url('../fonts/Lato/Lato-LightItalic.ttf');
+
+}
+
+@font-face {
+	font-family: Lato-Italic;
+	src: url('../fonts/Lato/Lato-Italic.ttf');
+
+}
+
+
+/*Khai báo biến*/
+:root {
+	--primary-color: #444;
+	--second-color: #fff;
+	scroll-behavior: smooth;
+	/* khi cuộn chuột sẽ mượn */
+}
+
+/*Dùng chung, kế thừa*/
+body {
+	font-family: Lato-Regular;
+	color: var(--primary-color);
+}
+
+/*COMMON*/
+button {
+	background-color: #1bbc9d;
+	color: var(--second-color);
+	padding: 14px 14px;
+	border: none;
+	font-family: Lato-Bold;
+	font-size: 13px;
+	letter-spacing: 2px;
+	/*khoảng cách giữa các chữ*/
+}
+
+/*HEADER*/
+/*MENU*/
+.navbar-light .navbar-nav .nav-link {
+	color: var(--primary-color);
+	margin-left: 7px;
+	padding-left: 12px;
+	padding-right: 12px;
+	font-size: 14px;
+}
+
+/*chọn thẻ a nằm trong li đầu tiên*/
+.navbar-light .navbar-nav li:first-child .nav-link {
+	margin-left: 0;
+}
+
+.navbar-light .navbar-nav .active>.nav-link,
+.navbar-light .navbar-nav .nav-link:hover {
+	background-color: #1bbc9b;
+	color: var(--second-color);
+}
+
+.navbar-light {
+	padding-top: 19px;
+	padding-bottom: 19px;
+}
+
+
+/*MAIN*/
+/*HOME*/
+
+.home {
+	padding-top: 72px;
+	padding-bottom: 82px;
+	background-image: url('../images/banner.jpg');
+	background-position: center;
+	background-size: cover;
+	color: var(--second-color);
+}
+
+.home h1 {
+	font-size: 55px;
+	font-family: Lato-Light;
+	margin-bottom: px;
+}
+
+.home span {
+	font-family: Lato-Bold;
+}
+
+.home p {
+	margin-bottom: 46px;
+	font-size: 18px;
+	font-family: Lato-Light;
+	max-width: 576px;
+	margin: auto;
+	margin-bottom: 46px;
+}
+
+.home button {
+	margin-bottom: 42px;
+
+}
+
+@media (max-width: 768px) {
+	.navbar-collapse {
+		position: absolute;
+		top: 100%;
+		width: 100%;
+		left: 0;
+		background-color: rgba(208, 208, 208, 0.8);
+
+	}
+
+	.navbar-light .navbar-nav .nav-link {
+		margin-left: 0;
+		margin-bottom: 5px;
+	}
+
+	.navbar-light .navbar-nav li:last-child .nav-link {
+		margin-bottom: 0;
+	}
+
+	/*.navbar-light .navbar-nav .nav-link:not(.navbar-light .navbar-nav li:last-child .nav-link) {
+		margin-bottom: 5px;
+		}*/
+	/*cách khác dùng not*/
+
+	.navbar-light {
+		padding-top: 0px;
+		padding-bottom: 0px;
+	}
+}
+
+/*PORTFOLIO*/
+
+.portfolio {
+	padding-top: 50px;
+	/*60px-34px=26px*/
+	padding-bottom: 26px;
+}
+
+.portfolio>.row {
+	max-width: 960px;
+	/* không xuất hiện thanh cuộn ngang */
+	margin: auto;
+}
+
+.portfolio h2 {
+	font-size: 28px;
+	margin-bottom: 11px;
+}
+
+.portfolio p {
+	font-size: 16px;
+	margin-bottom: 36px;
+}
+
+.portfolio button {
+	margin-bottom: 46px;
+	margin-left: 8px;
+	margin-right: 8px;
+}
+
+/* .portfolio img {
+	
+} */
+
+.portfolio .box {
+	background-color: red;
+	margin-bottom: 34px;
+	position: relative;
+	display: inline-block;
+}
+
+.portfolio .overlay {
+	background-image: url(../images/hover.png);
+	position: absolute;
+	/* khi dùng position: absolute; thì display chuyển thành inline-block */
+	top: 0;
+	width: 100%;
+	height: 100%;
+	border-radius: 50%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	/* cách 1 cho content nằm giữa */
+
+	pointer-events: none;
+	/* không bị đè khi click */
+
+	/* opacity: 0; */
+	transform: scale(0);
+	transition: 1s ease;
+	/* tốc độ hiện ra */
+}
+
+.portfolio .box:hover .overlay {
+	/* opacity: 1; */
+	transform: scale(1);
+}
+
+.content {
+	color: var(--second-color);
+}
+
+.portfolio .overlay .content span:nth-of-type(1) {
+	width: 43px;
+	line-height: 45px;
+	background-image: url(../images/search.png);
+	display: inline-block;
+	border-radius: 50%;
+	margin-bottom: 18px;
+
+}
+
+.portfolio .overlay .content span:nth-of-type(2) {
+	font-size: 18px;
+}
+
+.portfolio .overlay .content span:nth-of-type(3) {
+	font-size: 14px;
+}
+
+/*ABOUT*/
+.about {
+	padding-top: 54px;
+	/*74px-20px*/
+	padding-bottom: 54px;
+	background-color: #16a086;
+}
+
+.about .card {
+	display: inline-block;
+}
+
+.about .box {
+	position: relative;
+	display: inline-block;
+}
+
+.about .box .overlay {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	background-image: url(../images/hover.png);
+	width: 180px;
+	height: 48px;
+	display: flex;
+	align-items: center;
+	/* justify-content: center; */
+	justify-content: space-evenly;
+	/* cách ra theo khoảng cách đều nhau */
+	opacity: 0;
+	transition: 0.5s ease;
+
+}
+
+.about .box:hover .overlay {
+	opacity: 1;
+}
+
+.about .box .overlay a {
+	color: var(--second-color);
+	font-size: 29px;
+}
+
+
+.about>.row {
+	max-width: 840px;
+	margin: auto;
+}
+
+.about h2 {
+	font-size: 28px;
+	margin-bottom: 12px;
+	color: var(--second-color);
+}
+
+/*nhiều p quá nên chọn con trực tiếp '>'*/
+.about > p {
+	font-size: 14px;
+	margin-bottom: 42px;
+	color: var(--second-color);
+}
+
+.about .box-info {
+	background-color: var(--second-color);
+	padding-top: 18px;
+	padding-bottom: 18px;
+	/* width: 220px; */
+	margin: auto;
+	margin-bottom: 15px;
+	max-width: 0;
+	/* để nd không tràn ra */
+	min-width: 100%;
+	/* để kích thước tối thiểu của nó phải bằng với thằng cha của nó */
+	
+}
+
+.about .box-info h3 {
+	font-size: 18px;
+	margin-bottom: 1px;
+}
+
+.about .box-info em {
+	display: inline-block;
+	font-size: 14px;
+	margin-bottom: 18px;
+	font-family: Lato-Italic;
+}
+
+.about .box-info p {
+	font-size: 14px;
+	text-align: left;
+	padding-left: 10px;
+	padding-right: 10px;
+}
+
+/*CONTACT*/
+.contact {
+	padding-top: 49px;
+	padding-bottom: 60px;
+	background-color: #ecf0f1;
+}
+
+.contact>.row {
+	max-width: 940px;
+	margin: auto;
+}
+
+.contact h2 {
+	font-size: 28px;
+	margin-bottom: 10px;
+}
+
+.contact>p {
+	font-size: 14px;
+	margin-bottom: 50px;
+}
+
+.contact input,
+.contact textarea {
+	border: 2px solid #bec3c7;
+	border-radius: 0;
+}
+
+.contact input {
+	height: 47px;
+	margin-bottom: 22px;
+}
+
+.contact textarea {
+	height: 153px;
+	margin-bottom: 23px;
+}
+
+.contact ::placeholder {
+	font-size: 14px;
+	font-family: Lato-Italic;
+	color: #999;
+}
+
+.contact button {
+	padding-left: 29px;
+	padding-right: 29px;
+}
+
+.contact h3 {
+	font-size: 14px;
+	margin-bottom: 20px;
+}
+
+.contact address {
+	font-size: 14px;
+	margin-bottom: 22px;
+	display: flex;
+}
+
+.contact address span {
+	margin-left: 5px;
+	margin-top: -4px;
+	/*đẩy lên*/
+}
+
+.contact address~p {
+	/*lấy hết thẻ p sau thẻ address*/
+	font-size: 14px;
+	margin-bottom: 18px;
+}
+
+/*FOOTER*/
+footer {
+	height: 87px;
+	color: var(--second-color);
+	background-color: #2d3e50;
+	display: flex;
+	align-items: center;
+	/*2 dòng trên cho chữ xuống chính giữa của thẻ.*/
+}
+
+footer .back-to-top {
+	width: 44px;
+	line-height: 44px;
+	position: fixed;
+	right: 42px;
+	bottom: 20px;
+	background-color: #1bbc9b;
+	color: var(--second-color);
+	text-align: center;
+	/*dùng line-height cho chữ nằm giữa dòng*/
+
+}

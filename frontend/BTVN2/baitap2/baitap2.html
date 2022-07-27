@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+	<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+	<form action="processForm.php" method="POST" enctype="multipart/form-data">
+		<h1 style="font-style: italic">Personal Information</h1>
+		<div class="row">
+			<div class="col-left">
+				<img src="thayloc.png" alt="thayloc" >
+				<br>
+				<nav>
+					<ul>
+						<li><a class="active" href="#" >Personal Information</a></li>
+						<li><a href="#" >Certificates</a></li>
+						<li><a href="#" >Interest</a></li>
+						<li><a href="#" >Change Password</a></li>
+					</ul>
+				</nav>
+			</div>
+			<div class="col-right">
+				
+				<hr>
+				<div class="row-inner">
+					<div class="col-left-inner">
+						<label for="fname">Firstname: </label>
+					</div>
+					<div class="col-right-inner">
+						<input id="fname" name="fname" type="text" required autofocus>
+					</div>
+				</div>
+
+				<div class="row-inner">
+					<div class="col-left-inner">
+						<label for="lname">Lastname: </label>
+					</div>
+					<div class="col-right-inner">
+						<input id="lname" name="lname" type="text" required>
+					</div>
+				</div>
+
+				<div class="row-inner">
+					<div class="col-left-inner">
+						<label for="email">Email address: </label>
+					</div>
+					<div class="col-right-inner">
+						<input type="email" id="email" name="email" required>
+					</div>
+				</div>
+				<div class="row-inner">
+					<div class="col-left-inner">
+						<label for="upimg">Upload image: </label>
+					</div>
+					<div class="col-right-inner">
+						<input id="upimg" name="upimg" type="file">
+					</div>
+				</div>
+
+
+				<div class="row-inner">
+					<div class="col-left-inner">
+						<label for="gps">Location: </label>
+					</div>
+					<div class="col-right-inner">
+						<input type="text" id="gps" name="gps">
+					</div>
+				</div>
+
+				<div class="row-inner">
+					<div class="col-left-inner">
+						<label for="country">Country: </label>
+					</div>
+					<div class="col-right-inner">
+						<select name="country" id="country">
+							<option value="nope">Lựa chọn thành phố</option>
+							<option value="tphcm">Thành Phố Hồ CHí Minh</option>
+							<option value="dn">Đà Nẵng</option>
+							<option value="hn">Hà Nội</option>
+						</select>
+					</div>
+				</div>
+				<div class="row-inner">
+					<div class="col-left-inner">
+						<label for="englv">English level: </label>
+					</div>
+					<div class="col-right-inner">
+						<input type="range" id="englv" name="englv" min="0" max="10" value="1" step="1">
+					</div>
+				</div>
+				
+				<div class="row-inner">
+					<div class="col-left-inner">
+						<label for="male"> Giới Tính</label>
+					</div>
+					<div class="col-right-inner">
+						<input type="radio" name="gender" id="nam" value="male" checked>
+						<label for="nam" >Male</label>
+						<br>
+						<input type="radio" name="gender" id="nu" value="female">
+						<label for="nu">Female</label>
+						<br>
+						<input type="radio" name="gender" id="order" value="unknow">
+						<label for="order">Undefined</label>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<button type="submit">Save</button>
+	</form>
+</body>
+</html>
+
+
+

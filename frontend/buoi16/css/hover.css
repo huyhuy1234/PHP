@@ -1,0 +1,92 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 500px;
+    background: grey;
+}
+
+.energy {
+    position: relative;
+    width: 100px;
+    height: 100px;
+    background-color: white;
+    border-radius: 50%;
+    
+    
+}
+
+.energy span {
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    background: red;
+    /* right: 17px; */
+    border-radius: 50%;
+   
+    z-index: -1;
+    
+}
+
+.energy:hover span {
+    transform-origin: 60px;
+    /* xoay màn hình phải đi kèm rotate */
+    animation: animate 2s linear infinite;
+    animation: animate2 2s linear infinite;
+}
+
+
+
+
+.energy span:nth-child(even) {
+    transform-origin: 40px;
+    /* animation-direction: reverse; */
+    background-color: blue;
+    z-index: -1;
+    
+}
+
+@keyframes animate {
+    0% {
+        transform: rotate(0deg);
+    }
+    25% {
+        transform: rotate(90deg);
+    }
+    50% {
+        transform: rotate(180deg);
+    }
+    75%{
+        transform: rotate(270deg);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+   
+}
+
+@keyframes animate2 {
+    0% {
+        transform: rotate(0deg);
+    }
+    25% {
+        transform: rotate(90deg);
+    }
+    50% {
+        transform: rotate(180deg);
+    }
+    75%{
+        transform: rotate(270deg);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+   
+}

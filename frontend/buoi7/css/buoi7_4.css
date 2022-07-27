@@ -1,0 +1,80 @@
+/*Table*/
+/*border*/
+#id1, #id1 th, #id1 td {
+  border: 1px solid black;
+}
+
+#id2, #id2 th, #id2 td {
+  border: 1px solid black;
+}
+
+/*border-collaps:collapse chuyển 2 đường thành 1 đường và bỏ khoảng spacing giữa 2 đường*/
+/*Mặc định là seperate*/
+#id2 {
+  border-collapse: collapse;
+}
+
+/*Fullscreen table*/ 
+#id3 {
+  border-collapse: collapse;
+  width:100%;
+}
+
+#id3, #id3 th, #id3 td {
+  border: 1px solid black;
+}
+
+/*Stripped table: tạo màu cách dòng để dễ phân biệt giá trị ở các dòng*/
+
+#id4 {
+  border-collapse: collapse;
+  width:100%;
+}
+
+#id4, #id4 th, #id4 td {
+  border: 1px solid black;
+}
+
+/*Sử dung pseudo-class*/
+#id4 tbody tr:nth-child(even) {
+	background-color: #CFB3B3;
+}
+
+.xyz {
+  font-size: 20px;
+  color: red;
+}
+
+
+/*Hoverable table: move chuột lên dòng nó sẽ hightlight dòng đó*/
+
+#id5 {
+  border-collapse: collapse;
+  width:100%;
+}
+
+#id5, #id5 th, #id5 td {
+  border: 1px solid black;
+}
+
+/*Sử dung pseudo-class*/
+#id5 tr:hover {
+	background-color: #CFB3B3;
+}
+
+/*List*/
+/*list-style-type. Mặc định là circle*/
+#id6 {
+	list-style-type: square;
+}
+
+/*list-style-image: Sử dung hình cho bullet*/
+#id7 {
+	list-style-image: url("../images/bullet.jpg");
+}
+
+/*Không hiển thị bullet*/
+#id8 {
+  /*display: flex;*/
+  list-style:none;
+}

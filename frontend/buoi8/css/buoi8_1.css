@@ -1,0 +1,48 @@
+/*Display: Thuộc tính chỉ định phần tử sẽ hiển thị như thế nào. 
+Giá trị mặc định của display là block hay inline tùy thuộc vào loại thẻ (đã học ở bài trước). */
+/*inline*/
+
+#id1 {
+	display:inline-block;
+	background-color: red;
+	width:200px;
+	height:100px;
+}
+
+
+
+#id2 {
+	display: none;
+	height: 200px;
+	background-color: blue;
+}
+
+/*table, table-header-group, table-row-group, table-row, table-cell*/
+.table {
+	width:100%;
+	box-sizing: border-box; /*Tránh thanh cuộn ngang*/
+	display: table;/*table*/
+	border-collapse: collapse;
+}
+
+.table, .td {
+	border: 1px solid black;
+}
+
+.thead{
+	display: table-header-group;/*thead*/
+	font-weight: bold;
+
+}
+
+.tbody{
+	display: table-row-group;/*tbody*/
+}
+
+.tr{
+	display: table-row;/* tr*/
+}
+
+.td{
+	display: table-cell; /*td*/
+}

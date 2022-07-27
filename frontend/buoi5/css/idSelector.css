@@ -1,0 +1,9 @@
+/*Đứng trước dấu ngoặc nhọn gọi là selector- phần tử được chọn*/
+/*Đọc là: chọn thẻ div*/
+
+/*đặc điểm của idS là dấu # để gọi id*/
+
+#t {
+	background-color: red; 
+	color: white;
+}

@@ -1,0 +1,34 @@
+/*Khoảng trắng (space): nằm trong (hậu duệ) - descendant  selector*/
+#id1 {
+	border: 1px solid orange;
+}
+#id1 span {
+	color: red;
+}
+
+/*Dấu lớn hơn (>) : con trực tiếp – child selector */
+#id2 {
+	border: 1px solid orange;
+}
+p > span {
+	color: red;
+}
+
+/*Dấu cộng (+) : anh chị em liền kề - adjacent slibing selector 	
+		VD: p + h3 nghĩa là định dạng cho thẻ h3 nào nằm ngay sau thẻ p
+		Nếu ngay sau nó không phải là thẻ h3 thì không định dạng
+*/
+
+
+#id3 + h3 {
+	background-color: blue;
+}
+
+/*Dấu ngã (~): anh chị em chung – general slibing selector
+		VD: p ~ h3 nghĩa là định dạng cho tất cả thẻ h3 nào nằm sau thẻ p
+*/
+
+#id4 ~ h3 {
+	background-color: yellow;
+	border: 1px solid black;
+}
