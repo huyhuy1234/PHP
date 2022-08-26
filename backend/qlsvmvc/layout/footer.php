@@ -8,11 +8,11 @@
 
                     <?php
                     $test = '';
-                    if ($module == 'student') :
+                    if ($c == 'student') :
                         $test = "Bạn có muốn xóa sinh viên này?";
-                    elseif ($module == 'subject') :
+                    elseif ($c == 'subject') :
                         $test = "Bạn có muốn xóa môn học này?";
-                    elseif ($module == 'register') :
+                    elseif ($c == 'register') :
                         $test = "Bạn có muốn xóa sinh viên và môn học này?";
                     ?>
                     <?php endif; ?>

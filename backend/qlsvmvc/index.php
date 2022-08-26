@@ -16,6 +16,9 @@ require 'model/StudentRepository.php';
 require 'model/Subject.php';
 require 'model/SubjectRepository.php';
 
+require 'model/Register.php';
+require 'model/RegisterRepository.php';
+
 
 $c = $_GET['c'] ?? 'student'; // toán tử ba ngôi. Nếu tk đầu $_GET['c'] không có thì trả về tk sau 'student'
 $a = $_GET['a'] ?? 'index';

@@ -8,22 +8,15 @@
     <link rel="stylesheet" href="public/vendor/fontawesome-free-5.15.1-web/css/all.min.css">
     <link rel="stylesheet" href="public/css/style.css">
 </head>
+<?php global $c; ?>
 
 <body>
     <div class="container" style="margin-top:20px;">
         <?php
-        $requestURI = $_SERVER['REQUEST_URI'];
-        // var_dump($requestURI);
-        $temp1 = explode('=', $requestURI);
-        $module = $temp1[1];
-
-
-
         ?>
-        <a href="?c=student"
-            class="<?= ($module == 'student'  || $module == '') ? 'active' : '' ?> btn btn-info">Students</a>
-        <a href="?c=subject" class="<?= $module == 'subject' ? 'active' : '' ?> btn btn-info">Subject</a>
-        <a href="?c=register" class="<?= $module == 'register' ? 'active' : '' ?> btn btn-info">Register</a>
+        <a href="/" class="<?= ($c == 'student') ? 'active' : '' ?> btn btn-info">Students</a>
+        <a href="?c=subject" class="<?= ($c == 'subject') ? 'active' : '' ?> btn btn-info">Subject</a>
+        <a href="?c=register" class="<?= ($c == 'register') ? 'active' : '' ?> btn btn-info">Register</a>
         <?php
 
         $message = '';
